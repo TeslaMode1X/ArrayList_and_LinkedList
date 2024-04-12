@@ -30,7 +30,7 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
     @Override
     public void add(T item) {
         if (length >= size - 1) {
-            arrayShrink();
+            arrayWidening();
         }
         array[length++] = item;
     }
@@ -51,7 +51,7 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         }
 
         if (length == size) {
-            arrayShrink();
+            arrayWidening();
         }
 
         for (int i = length - 1; i >= index; i--) {
@@ -64,7 +64,7 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
     @Override
     public void addFirst(T item) {
         if (length >= size - 1) {
-            arrayShrink();
+            arrayWidening();
         }
 
         for (int i = length; i > 0; i--) {
@@ -165,12 +165,14 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         return false;
     }
 
+
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        return array;
     }
 
-    private void arrayShrink() {
+
+    private void arrayWidening() {
         size *= 2;
         Object[] newArray = new Object[size];
         for(int i = 0; i < length; i++) {
