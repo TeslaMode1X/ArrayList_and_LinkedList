@@ -37,17 +37,31 @@ public class Main {
 //
 //        System.out.println(list.exists(4));
 
-        MyStack<String> stack = new MyStack<>();
+//        MyStack<String> stack = new MyStack<>();
+//
+//        stack.push("first");
+//        stack.push("second");
+//        stack.push("third");
+//        stack.push("fourth");
+//        stack.push("fifth");
+//        stack.push("sixth");
+//
+//        System.out.println(stack.peek());
+//        printStack(stack);
 
-        stack.push("first");
-        stack.push("second");
-        stack.push("third");
-        stack.push("fourth");
-        stack.push("fifth");
-        stack.push("sixth");
+        MyQueue<String> queue = new MyQueue<>();
 
-        System.out.println(stack.peek());
-        printStack(stack);
+        queue.enqueue("first");
+        queue.enqueue("second");
+        queue.enqueue("third");
+
+        System.out.println(queue.dequeue());
+
+        System.out.println(queue.dequeue());
+
+        System.out.println(queue.dequeue());
+
+        System.out.println(queue.size());
 
     }
 

@@ -1,5 +1,6 @@
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
     Node<T> head;
@@ -98,13 +99,21 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
 
     @Override
     public T getFirst() {
+        if (head == null) {
+            throw new NoSuchElementException("List is empty");
+        }
+
         return head.data;
     }
 
     @Override
     public T getLast() {
+        if (tail == null) {
+            throw new NoSuchElementException("List is empty");
+        }
         return tail.data;
     }
+
 
     @Override
     public void remove(int index) {
@@ -130,9 +139,15 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
 
     @Override
     public void removeFirst() {
-        head = head.next;
-        head.prev = null;
-        size--;
+        if (head != null) {
+            head = head.next;
+            if (head != null) {
+                head.prev = null;
+            } else {
+                tail = null;
+            }
+            size--;
+        }
     }
 
     @Override
