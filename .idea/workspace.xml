@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a96e4abd-e330-4831-81e8-b001dc69107c" name="Changes" comment="Created MyStack based on MyLinkedList and added some example strokes in main">
+    <list default="true" id="a96e4abd-e330-4831-81e8-b001dc69107c" name="Changes" comment="Created MyQueue based on MyLinkedList and MyLinkedList logic was altered a bit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/ArrayList and LinkedList",
+    "last_opened_file_path": "C:/контестер/LinkedListExample",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,7 +60,7 @@
       <workItem from="1712889121285" duration="6817000" />
       <workItem from="1712916208479" duration="145000" />
       <workItem from="1712921012826" duration="8269000" />
-      <workItem from="1713060653858" duration="2953000" />
+      <workItem from="1713060653858" duration="19076000" />
     </task>
     <task id="LOCAL-00001" summary="Created MyList interface">
       <option name="closed" value="true" />
@@ -96,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713062657253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created MyQueue based on MyLinkedList and MyLinkedList logic was altered a bit">
+      <option name="closed" value="true" />
+      <created>1713064468085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713064468086</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,9 +113,42 @@
     <MESSAGE value="Created my own ArrayList as MyArrayList" />
     <MESSAGE value="Created Node and MyLinkedList based on that Node. Also, I tried to create toArray in MyArrayList. And little changes in main, just testing strokes." />
     <MESSAGE value="Created MyStack based on MyLinkedList and added some example strokes in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created MyStack based on MyLinkedList and added some example strokes in main" />
+    <MESSAGE value="Created MyQueue based on MyLinkedList and MyLinkedList logic was altered a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created MyQueue based on MyLinkedList and MyLinkedList logic was altered a bit" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyHeap.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyHeap.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MyHeap.java</url>
+          <line>83</line>
+          <properties class="MyHeap" method="heapify">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/MyHeap.java</url>
+          <line>103</line>
+          <properties class="MyHeap" method="traverseUp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="MyLinkedList" memberName="tail" />

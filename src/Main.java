@@ -49,23 +49,47 @@ public class Main {
 //        System.out.println(stack.peek());
 //        printStack(stack);
 
-        MyQueue<String> queue = new MyQueue<>();
+//        MyQueue<String> queue = new MyQueue<>();
+//
+//        queue.enqueue("first");
+//        queue.enqueue("second");
+//        queue.enqueue("third");
+//
+//        System.out.println(queue.dequeue());
+//
+//        System.out.println(queue.dequeue());
+//
+//        System.out.println(queue.dequeue());
+//
+//        System.out.println(queue.size());
 
-        queue.enqueue("first");
-        queue.enqueue("second");
-        queue.enqueue("third");
+        MyHeap<Integer> heap = new MyHeap<>();
 
-        System.out.println(queue.dequeue());
+        heap.insert(10);
 
-        System.out.println(queue.dequeue());
+        heap.insert(9);
 
-        System.out.println(queue.dequeue());
+        heap.insert(8);
 
-        System.out.println(queue.size());
+        heap.insert(7);
+        heap.insert(6);
+
+        heap.insert(5);
+        heap.insert(4);
+        heap.insert(3);
+        heap.insert(2);
+        heap.insert(1);
+
+        heap.extractMin();
+
+        for (int i = 0; i < heap.size(); i++) {
+            System.out.print(heap.get(i) + " ");
+        }
+
 
     }
 
-    public static <T> void printArray(MyLinkedList list) {
+    public static <T> void printArray(MyArrayList list) {
         for (Object item : list) {
             System.out.println(item);
         }
