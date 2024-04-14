@@ -137,8 +137,16 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
 
     @Override
     public void removeLast() {
-        tail = tail.prev;
-        tail.next = null;
+        if (tail == head) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            if (tail != null) {
+                tail.next = null;
+            } else {
+                head = null;
+            }
+        }
         size--;
     }
 
